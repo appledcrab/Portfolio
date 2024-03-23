@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        #me-fact {
+            color: #A10000; /* .... Aradia color*/
+        }
+    </style>
+    <script>
+        // Array of facts about me
+   
+            var meFacts = [
+                {fact: "a Student"},
+                {fact: "a Developer"},
+                {fact: "a Designer"},
+                {fact: "a Gamer"},
+                {fact: "an Artist"},
+
+            ];
+
+            function updateMeFact() {
+                setInterval(function() {
+                    var oldMeFact = document.getElementById("me-fact");
+                    oldMeFact.innerHTML = meFacts[randNum(0, meFacts.length - 1)].fact;
+                }, 1500);
+            }
+
+            function randNum(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            updateMeFact();
+    
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Samantha Baker</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-block">
+        <div id="about">
+            <h1>Hello I'm Sam!</h1>
+            <h2>I am <span id="me-fact">a Student</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis neque vel erat faucibus consectetur ut eget dui.</p>
+        </div>
+
+        <div class="image">
+            <img src="images/largeImg.png" alt="Image of myself">
+        </div>
+    </div>
+
+    <!-- More content sections -->
+
+</body>
+</html>

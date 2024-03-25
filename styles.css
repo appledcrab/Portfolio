@@ -10,7 +10,7 @@ header {
     background-color: #8a0303;
     color: #ffffff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -19,7 +19,7 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-around   ;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -34,46 +34,115 @@ header {
     margin-left: 20px;
 }
 
-.navbar ul li a {
+.navbar a {
     color: #fff;
     text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    color: #f0decd;
+    background-color: #333;
+    border-radius: 5px;
 }
 
 /* main content */
 .content-block {
     display: flex;
     max-width: 70%;
-    margin:auto;
-    margin-top: 120px; 
+    margin: auto;
+    margin-top: 120px;
     margin-bottom: 20px;
     padding: 20px;
     border: 2px solid #000000;
 
     flex-direction: row;
-    /* justify-content: space-evenly; */
     align-items: space-evenly;
-    /* flex-wrap: wrap; */
 
-    /* justify-content: space-around; */
-    /* text-align: center; */
+}
+
+.projects-box-container {
+    width: 100%;
+}
+
+.project-box div {
+    /* margin: 20px 0; */
+    padding-left: 20px;
+    width: 100;
+}
+
+.project-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    justify-content: center;
+    margin: 20px 0;
+
+    /* padding: 5px; */
+    border: 2px solid #000000;
+    background-color: #efcebc;
+    width: 100%;
+}
+
+.tags-container,
+.project-tags {
+    display: flex;
+    gap: 20px;
+}
+
+.project-date {
+    font-size: .6em;
+    color: #8a0303;
+    margin: 5px;
+
+}
+
+.tag,
+.project-tag {
+    margin: 5px;
+    /* padding: 10px; */
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: #8a0303;
+    color: #f0decd;
+    border-radius: 5px;
+}
+
+.project-tag {
+    font-size: 1em;
+    background-color: grey;
+}
+
+
+
+.tag:hover,
+.project-tag:hover {
+    background-color: #333;
+    cursor: pointer;
+    scale: 1.1;
 }
 
 .content-block h2 {
     color: #333;
     font-size: 3em;
 }
-.content-block h1{
+
+.content-block h1 {
     font-size: 5em;
 }
-.content-block img{
+
+.content-block img {
     padding: 20px;
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     align-self: center;
     /* background-color: #000000; */
 
 }
-.content-block #about, .content-block .image{
+
+.content-block #about,
+.content-block .image {
     padding: 20px;
     width: 50%;
     height: auto;
@@ -82,17 +151,20 @@ header {
 
 
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1200px) {
     .content-block {
         flex-direction: column;
     }
-    
+
 }
-.me-fact{
+
+.me-fact {
     font-size: 1.3em;
     color: #333;
 
 }
+
 .content-block p {
     color: #666;
     line-height: 1.6;

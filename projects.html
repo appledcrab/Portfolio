@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tags = document.querySelectorAll('.tag');
+            const projects = document.querySelectorAll('.project-box');
+
+            tags.forEach(tag => {
+                tag.addEventListener('click', () => {
+                    const filter = tag.dataset.filter;
+
+                    projects.forEach(project => {
+                        const projectTags = project.dataset.tags.split(',');
+                        if (filter === 'all' || projectTags.includes(filter)) {
+                            project.style.display = 'block'; // Set display to flex
+                            project.style.justifyContent = 'center'; // Center content horizontally
+                            project.style.alignItems = 'center'; // Center content vertically
+                        } else {
+                            project.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1><a href="index.html">Samantha Baker</a></h1>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-block">
+        <h1 style="padding-right: 70px;">Projects</h1>
+
+        <div id="projects" class="projects-box-container">
+            <div class="tags-container">
+                <div class="tag" data-filter="all">All</div>
+                <div class="tag" data-filter="web">Web</div>
+                <div class="tag" data-filter="mobile">Mobile</div>
+                <div class="tag" data-filter="team">Team</div>
+            </div>
+
+            <div class="project-box" data-tags="web">
+                <div>
+                    <h2>Portfolio Website<br><span class="project-date">March 2024 - Present</span></h2>
+                    <div class="project-tags">
+                        <div class="project-tag">Web</div>
+                        <div class="project-tag">HTML</div>
+                        <div class="project-tag">CSS</div>
+                        <div class="project-tag">JS</div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus et nunc
+                        vestibulum
+                        ultricies. Nullam nec purus et nunc vestibulum ultricies.</p>
+                </div>
+            </div>
+
+            <div class="project-box" data-tags="mobile">
+                <div>
+                    <h2>Healthy Eating App<br><span class="project-date">Febuary 2024</span></h2>
+                    <div class="project-tags">
+                        <div class="project-tag">Mobile App</div>
+                        <div class="project-tag">Flutter</div>
+                        <div class="project-tag">Dart</div>
+                        <div class="project-tag">API</div>
+                        <div class="project-tag">Hackathon</div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus et nunc
+                        vestibulum
+                        ultricies. Nullam nec purus et nunc vestibulum ultricies.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -9,7 +9,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const tags = document.querySelectorAll('.tag');
+            const tags = document.querySelectorAll('.tag, .project-tag');
             const projects = document.querySelectorAll('.project-box');
 
             tags.forEach(tag => {
@@ -60,7 +60,7 @@
                 <div>
                     <h2>Portfolio Website<br><span class="project-date">March 2024 - Present</span></h2>
                     <div class="project-tags">
-                        <div class="project-tag">Web</div>
+                        <div data-filter="web" class="project-tag">Web</div>
                         <div class="project-tag">HTML</div>
                         <div class="project-tag">CSS</div>
                         <div class="project-tag">JS</div>
@@ -75,11 +75,39 @@
                 <div>
                     <h2>Healthy Eating App<br><span class="project-date">Febuary 2024</span></h2>
                     <div class="project-tags">
-                        <div class="project-tag">Mobile App</div>
+                        <div data-filter="mobile" class="project-tag">Mobile App</div>
                         <div class="project-tag">Flutter</div>
                         <div class="project-tag">Dart</div>
                         <div class="project-tag">API</div>
                         <div class="project-tag">Hackathon</div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus et nunc
+                        vestibulum
+                        ultricies. Nullam nec purus et nunc vestibulum ultricies.</p>
+                </div>
+            </div>
+            <div class="project-box" data-tags="mobile,team">
+                <div>
+                    <h2>Diary App with Mood tracking<br><span class="project-date">March 2024</span></h2>
+                    <div class="project-tags">
+                        <div data-filter="mobile" class="project-tag">Mobile App</div>
+                        <div class="project-tag">Flutter</div>
+                        <div class="project-tag">Dart</div>
+                        <div data-filter="team" class="project-tag">Team</div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus et nunc
+                        vestibulum
+                        ultricies. Nullam nec purus et nunc vestibulum ultricies.</p>
+                </div>
+            </div>
+            <div class="project-box" data-tags="web,team">
+                <div>
+                    <h2>Recipes Web Page: Spoon and Ladle<br><span class="project-date">Febuary 2024</span></h2>
+                    <div class="project-tags">
+                        <div data-filter="web" class="project-tag">Web</div>
+                        <div class="project-tag">HTML</div>
+                        <div class="project-tag">CSS</div>
+                        <div data-filter="team" class="project-tag">Team</div>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus et nunc
                         vestibulum

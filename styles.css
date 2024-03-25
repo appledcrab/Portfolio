@@ -89,6 +89,7 @@ header {
 .project-tags {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .project-date {

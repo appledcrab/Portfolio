@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .content-block {
+            max-width: 80%;
+        }
+
+        .project-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-section {
+            margin-bottom: 20px;
+
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 1200px) {
+            .content-block {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* I wanted to use a more grid based */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1><a href="../index.html">Samantha Baker</a></h1>
+            <ul>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-block">
+        <div class="projects-box-container">
+            <div class="project-box">
+                <div class="project-details">
+                    <h2>Project Portfolio<br><span class="project-date">March 2024 - Present</span>
+                    </h2>
+                    <p>Portfolio showcasing me and my journey</p>
+
+                    <div class="tags-container">
+                        <div class="project-tags">
+                            <span class="project-tag">Tag1</span>
+                            <span class="project-tag">Tag2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project sections -->
+            <div class="project-sections">
+                <!-- Experiences -->
+                <div class="project-section">
+                    <h2>My Project Experiences</h2>
+                    <p>For my portfolio, I wanted to make a proper showcase of my experience and projects that I have
+                        done. Expanding further than my resume, I wanted to make something more colorful, still
+                        professional, but showing some of my character. I had more to show than what was on my resume,
+                        and I will get that across.</p>
+                    <p>The main color for the page is red. Red is my favorite color. That's about the only reason. I
+                        enjoy green, but I couldn't do red and green for lack of being reminded of a Christmas tree.</p>
+                    <p>I have made a portfolio for class before, but did not enjoy having to include certain aspects of
+                        the rubric or how it came out for that matter. (It's main color was green. Surprise).
+                        I did learn more about flexbox while doing it and my frsutrations with not getting things to
+                        align properly</p>
+                    <p>Making this portfolio, for myself </p>
+                    <div class="placeholder-image"></div>
+                </div>
+
+                <div>
+                    <!-- Lessons Learned -->
+                    <div class="project-section">
+                        <h2>Lessons Learned</h2>
+                        <p>Write about the lessons you've learned from your projects here...</p>
+                        <div class="placeholder-image"></div>
+                    </div>
+                    <div class="project-section">
+                        <h2>Future Plans</h2>
+                        <p>Write about your future plans for the projects here...</p>
+                        <div class="placeholder-image"></div>
+                    </div>
+                </div>
+
+                <!-- Future Plans -->
+                <div class="project-section">
+                    <h2>Images</h2>
+                    <p>Write about your future plans for the projects here...</p>
+                    <div class="placeholder-image"></div>
+                </div>
+            </div>
+
+            <!-- Repeat this structure for each project -->
+
+        </div>
+    </div>
+</body>
+
+</html>

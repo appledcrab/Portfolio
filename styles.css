@@ -93,7 +93,7 @@ header {
 }
 
 .project-date {
-    font-size: .6em;
+    font-size: 30px;
     color: #8a0303;
     margin: 5px;
 
@@ -169,4 +169,33 @@ header {
 .content-block p {
     color: #666;
     line-height: 1.6;
+}
+
+.project-box a {
+    text-decoration: none;
+}
+
+.project-box a h2:hover {
+    transform-origin: center;
+    transform: rotate(-2deg);
+}
+
+/* For the project detail pages */
+.project-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-section {
+    background-color: #efcebc;
+    padding: 20px;
+    border: 2px solid #000;
+    /* border-radius: 10px; */
+}
+
+.placeholder-image {
+    background-color: #ccc;
+    height: 150px;
+    border: 2px solid #000;
 }

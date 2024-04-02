@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodMate</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .content-block {
+            max-width: 80%;
+        }
+
+        .project-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-section {
+            margin-bottom: 20px;
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 1200px) {
+            .content-block {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .project-page {
+            padding-left: 0;
+        }
+
+        /* Additional styles can be added as needed */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1><a href="../index.html">Samantha Baker</a></h1>
+            <ul>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-block">
+        <div class="projects-box-container">
+            <div class="project-box">
+                <div class="pj-pg project-details">
+                    <h2>Project Title<br><span class="project-date">Start Date - End Date</span>
+                    </h2>
+                    <p>Project Description</p>
+
+                    <div class="pj-pg tags-container ">
+                        <div class="project-tags">
+                            <span class="project-tag">Tag1</span>
+                            <span class="project-tag">Tag2</span>
+                            <!-- Add more tags as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project sections -->
+            <div class="project-sections">
+                <!-- Experiences -->
+                <div class="project-section">
+                    <h2>My Project Experiences</h2>
+                    <p>Write about your experiences going through the project here...</p>
+                </div>
+
+                <div>
+                    <!-- Lessons Learned -->
+                    <div class="project-section">
+                        <h2>Lessons Learned</h2>
+                        <p>Write about the lessons you've learned from the project here...</p>
+                    </div>
+
+                    <!-- Future Plans -->
+                    <div class="project-section">
+                        <h2>Future Plans</h2>
+                        <p>Write about your future plans for the project here...</p>
+                    </div>
+                </div>
+
+                <!-- Images -->
+                <div class="project-section">
+                    <h2>Images</h2>
+                    <p>Planning to put images here</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

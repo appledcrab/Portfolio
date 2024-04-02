@@ -68,8 +68,10 @@ header {
 .project-box div {
     /* margin: 20px 0; */
     padding-left: 20px;
-    width: 100;
+    /* width: 100; */
 }
+
+
 
 .project-box {
     display: flex;
@@ -167,8 +169,15 @@ header {
 }
 
 .content-block p {
-    color: #666;
+    color: #391f1f;
     line-height: 1.6;
+    font-size: 1.5em;
+}
+
+.topic-text {
+    font-weight: bold;
+    color: #6c2a2a;
+
 }
 
 .project-box a {
@@ -192,10 +201,16 @@ header {
     padding: 20px;
     border: 2px solid #000;
     /* border-radius: 10px; */
+    margin-bottom: 20px;
 }
 
 .placeholder-image {
     background-color: #ccc;
     height: 150px;
     border: 2px solid #000;
+}
+
+.project-box div.pj-pg,
+.project-box div.project-tags {
+    padding-left: 0px;
 }

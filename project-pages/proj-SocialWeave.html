@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .content-block {
+            max-width: 80%;
+        }
+
+        .project-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-section {
+            margin-bottom: 20px;
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 1200px) {
+            .content-block {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .project-page {
+            padding-left: 0;
+        }
+
+        /* Additional styles can be added as needed */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1><a href="../index.html">Samantha Baker</a></h1>
+            <ul>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-block">
+        <div class="projects-box-container">
+            <div class="project-box project-details">
+                <div class="pj-pg">
+                    <h2>Social Weave<br><span class="project-date">April 2024</span>
+                    </h2>
+                    <p><a href="https://github.com/appledcrab/Social-Media-App">Github Repo</a></p>
+                    <div class="pj-pg tags-container ">
+                        <div class="project-tags">
+                            <span class="project-tag">Mobile App</span>
+                            <span class="project-tag">Flutter + Dart</span>
+                            <span class="project-tag">Team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project sections -->
+            <div class="project-sections">
+                <!-- Experiences -->
+                <div class="project-section">
+                    <h2>My Project Experiences</h2>
+                    <p>This was the second group project for my Mobile App Development Class. I worked with the same person I did before on the Mood Mate app.</p>
+                    
+                    <p>To speed up the process I looked for more packages that could help. I found a peristent nav bar package and a basic messaging that helped with messaging between users.</p>
+                    <p>It was a little more stressful doing this alongside another large group project, but we pushed through. Once it was starting to work, having messages in real time was fun and I tested it with my friend and my phones.</p>
+                </div>
+
+                <div>
+                    <!-- Lessons Learned -->
+                    <div class="project-section">
+                        <h2>Lessons Learned</h2>
+                        <p>Importance of reading through not only the documentation, but also following the methods locally to see exactly what it's doing if the documentation isn't helping.</p>
+                        <p>I learned more about the firebase database along with having collections within collections and having to work around them aswell.</p>
+                        <p>Creating unique user experiences by having their page shown by the list of people they are following.</p>
+                    </div>
+
+                    <!-- Future Plans -->
+                    <div class="project-section">
+                        <h2>Future Plans</h2>
+                        <p>The idea of revisiting is tempting, but I am not attached enough to spend extra money on it.</p>
+                        <p>While working on it, I tried to figure out how to push notifications from in app and outside of app based on if someone posts or the user gets messaged, but from what I saw, it seemed out of reach for the time I had left before the deadline.</p>
+                        <p>(if you see notifications mentioned it can get notifications from the firebase cloud messaging, but manually)</p>
+                        <p>The visuals of the app is also really basic and could be revisited.</p>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Images -->
+                <div class="project-section">
+                    <h2>Images</h2>
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
